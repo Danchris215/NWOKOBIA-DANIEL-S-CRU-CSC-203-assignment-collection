@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Embeds</title>
+    <style>
+        /* Styles for iframe embed */
+        .iframeembed {
+            padding: 20px;
+            width: 20%;
+            float: left;
+        }
+
+        /* Styles for video embed */
+        .embedvideo {
+            padding: 20px;
+            width: 40%;
+            float: left;
+        }
+
+        /* Styles for audio embed */
+        .embedaudio {
+            padding: 20px;
+            width: 20%;
+            float: left;
+        }
+
+        /* Styles for YouTube iframe */
+        .embed-youtube {
+            padding: 20px;
+            width: 20%;
+            float: left;
+        }
+
+        
+
+        /*media query*/
+        @media screen and (max-width: 760px) {
+            .iframeembed,
+            .embedvideo,
+            .embedaudio,
+            .embed-youtube {
+                width: 100%; 
+                 
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <div class="iframeembed">
+            <iframe src="my_personal_page.html" title="This is my personal page" width="300px" height="250px"></iframe>
+        </div>
+
+        <div class="embedvideo">
+            <video width="100px" height="
+            150px" controls>
+                <source src="0620 (1).mp4" type="video/mp4">
+                <source src="0620 (1).ogg" type="video/ogg">
+                Your brrowser does not support this version.
+            </video>
+        </div>
+
+        <div class="embedvideo">
+            <video width="100px" height="150px" controls>
+                <source src="0910.mp4" type="video/mp4">
+                <source src="0910.ogg" type="video/ogg">
+                Your browser does not support this version.
+            </video>
+        </div>
+
+        <div class="embedaudio">
+            <audio controls>
+                <source src="Ebuka_Songs_-_Calling_My_Name_Im_A_Soldier__CeeNaija.com_.mp3" type="audio/mp3">
+                <source src="Ebuka_Songs_-_Calling_My_Name_Im_A_Soldier__CeeNaija.com_.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="embedaudio">
+            <audio controls>
+                <source src="Lawrence_Oyor_-_My_Daddy_My_Daddy_Ft_Sunmisola_Agbebi_CeeNaija.com_.mp3" type="audio/mp3">
+                <source src="Lawrence_Oyor_-_My_Daddy_My_Daddy_Ft_Sunmisola_Agbebi_CeeNaija.com_.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="embed-youtube">
+            <iframe src="https://www.youtube.com/embed/H1SrvI-ysbk" allowfullscreen></iframe>
+        </div>
+
+        <div class="embed-youtube">
+            <iframe src="https://www.youtube.com/embed/J38Yq85ZoyY" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>

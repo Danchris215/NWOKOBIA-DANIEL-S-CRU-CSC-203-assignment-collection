@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        form{
+            background-color: white;
+            color: black;
+            
+        }
+        input{
+            margin-bottom: 10px;
+            padding: 4px;
+            border-radius: 7px;
+        }
+        body{
+            background-color: lightblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Job Application for Systems Administrator Role</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        
+    <fieldset>
+        <div>
+            <label for="surname">
+                Surname:
+            </label>
+       
+             <input type="text" id="surname" name="surname" placeholder="Enter your surname" required>
+        </div>
+        <div>
+            <label for="othernames">
+             Othernames:
+            </label>
+       
+             <input type="text" id="othernames" name="othername" required>
+        </div>
+        <div>
+            <label for="d-o-b">
+                Date of birth:
+            </label>
+        
+            <input type="date" id="d-o-b" name="Date of birth">
+        </div>
+        <div>
+            <label for="age">
+                Age:
+            </label>
+            <input type="number" id="age" name="Age">
+        </div>
+        <label>Gender: </label>
+        <div><input type="radio" id="male" name="gender" value="male"><label for="male">Male</label></div>
+        <div><input type="radio" id="female" name="gender" value="female"><label for="female">Female</label></div>  
+       <div><label>
+        Level of Education:
+       </label></div>
+       <div><input type="checkbox" id="bsc"> <label for="bsc">BSc. </label></div>
+        <div><input type="checkbox" id="msc"><label for="msc">MSc. </label></div>
+        <div><input type="checkbox" id="phd"><label for="phd">Phd</label></div>
+        <div><label for="course">Course Studied:</label>
+        <select name="course" id="course">
+            <option>Computer Science</option>
+            <option>ICT</option>
+            <option>Software Engineering</option>
+            <option>Cyber Security</option>
+            <option>Computer Engineering</option>
+            <option>Telecommunication Science</option>
+        </div>
+        </select>
+        <div>
+            <label for="skill-description">Tell us about your skills:</label>
+           <div><textarea rows="7">
+
+            </textarea></div>
+            <div>
+                <label for="file">Upload a file: </label>
+                <input type="file" id="file" name="file" required>
+            </div>
+        </div>
+        <div><button type="submit">Submit</button></div>
+    </fieldset>
+    </form>
+</body>
+</html>
